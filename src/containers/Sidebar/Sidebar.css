@@ -1,0 +1,23 @@
+.Sidebar-container{
+    background-color: var(--clr-blue-darker);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Sidebar-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--fs-xs)
+}
+
+.logout{
+    position: absolute;
+    bottom:var(--fs-sm);
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
+    background-color:var(--clr-green-lighter)
+}

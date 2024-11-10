@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --clr-accent: hsla(175, 67%, 24%, 1);
-  --clr-dark: hsla(249, 60%, 9%, 1);
+  --clr-green: hsla(175, 67%, 24%, 1);
+  --clr-green-lighter: hsla(175, 59%, 35%, 1);
+  --clr-blue-darker: hsla(249, 60%, 9%, 1);
   --clr-lighter: hsla(249, 10%, 36%, 1);
   --clr-white: hsla(0, 0%, 96%, 1);
 
   --ff-sans: "Urbanist", sans-serif;
+
+  --fs-xs: 1rem;
+  --fs-sm: 2rem;
+  --fs-md: 3rem;
+  --fs-lg: 4rem;
 }
 
 *{
@@ -17,6 +23,12 @@
 
 html, body{
   font-family: var(--ff-sans);
+}
+html{
+  font-size: 62.5%
+}
+body{
+  font-size: 1.6rem;
 }
 
 

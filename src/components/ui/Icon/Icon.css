@@ -1,0 +1,15 @@
+.Icon-active{
+    background-color: var(--clr-green-lighter);
+    border-radius: 50%;
+}
+
+.Icon {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Icon svg{
+    fill:var(--clr-white);
+}
