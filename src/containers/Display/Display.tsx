@@ -2,6 +2,7 @@ import Icon from "../../components/ui/Icon/Icon";
 import "./Display.css";
 import Button from "../../components/ui/Button/Button";
 import Tab from "../../components/ui/Tab/Tab";
+import Table from "../../components/Table/Table";
 
 function Display() {
   return (
@@ -74,6 +75,10 @@ function Display() {
             All Time
           </Button>
         </div>
+      </div>
+
+      <div>
+        <Table />
       </div>
     </main>
   );

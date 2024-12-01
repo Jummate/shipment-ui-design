@@ -1,0 +1,23 @@
+Table {
+  border-collapse: collapse;
+  font-size: var(--fs-xs);
+}
+
+th,
+td {
+  padding: 20px;
+  padding-left: 0;
+  text-align: left;
+  padding-bottom: 5px;
+  padding-right: var(--fs-lg);
+  /* border: 1px solid #ddd; */
+}
+td {
+  font-weight: 600;
+}
+
+th {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--clr-lighter);
+}
