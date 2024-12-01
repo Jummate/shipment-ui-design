@@ -1,0 +1,17 @@
+.Tab-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Tab-item {
+  /* padding: 10px; */
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.Tab-active {
+  border-bottom: 2px solid var(--clr-green);
+  padding-bottom: 0.2rem;
+  /* transition: border 0.1s ease-in-out; */
+}
