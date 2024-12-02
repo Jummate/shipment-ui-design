@@ -1,15 +1,11 @@
-// import { useState } from 'react'
-
-import { Shipment } from "./containers"
+import { Shipment } from "./containers";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-     <Shipment />
+      <Shipment />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

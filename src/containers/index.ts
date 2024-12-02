@@ -1,4 +1,5 @@
 import Shipment from "./Shipment/Shipment";
+import Sidebar from "./Sidebar/Sidebar";
+import Display from "./Display/Display";
 
-
-export {Shipment}
+export { Shipment, Sidebar, Display };

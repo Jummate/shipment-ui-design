@@ -1,18 +1,10 @@
-import React from "react";
+// import React from "react";
 
 import Button from "../ui/Button/Button";
-
-type RowData = {
-  shipmentID: string;
-  commodity: string;
-  destination: string;
-  type: string;
-  grossWeight: string;
-  status: string;
-};
+import { ShipmentItem } from "../../types";
 
 type TableRowProps = {
-  rowData: RowData;
+  rowData: ShipmentItem;
 };
 
 function TableRow({
