@@ -64,6 +64,7 @@ function Display() {
   const [selectedTab, setSelectedTab] = useState<number>(0);
   const [originalShipmentData] = useState<ShipmentItem[]>(tableData);
   const [shipmentData, setShipmentData] = useState<ShipmentItem[]>(tableData);
+  //   const [searchKeyword, setSearchKeyword] = useState<string>("");
 
   const handleDataFiltering = () => {
     if (tabOptions[selectedTab] == "All Shipments") {
@@ -81,6 +82,22 @@ function Display() {
     }
   };
 
+  const handleDataSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!e.target.value) {
+      setShipmentData(originalShipmentData);
+    } else {
+      const filteredData = originalShipmentData.filter(
+        (item) =>
+          item.shipmentID.toLowerCase().includes(e.target.value) ||
+          item.commodity.toLowerCase().includes(e.target.value) ||
+          item.destination.toLowerCase().includes(e.target.value) ||
+          item.type.toLowerCase().includes(e.target.value) ||
+          item.grossWeight.toLowerCase().includes(e.target.value)
+      );
+      setShipmentData(filteredData);
+    }
+  };
+
   useEffect(() => {
     handleDataFiltering();
   }, [selectedTab]);
@@ -88,7 +105,11 @@ function Display() {
     <main className="Display-container">
       <header>
         <h1>SHIPMENTS</h1>
-        <input placeholder="Search shipments..." />
+        <input
+          placeholder="Search shipments..."
+          //   value={searchKeyword}
+          onChange={handleDataSearch}
+        />
 
         <div className="icons-container">
           <Icon customStyles="icon">
